@@ -1,5 +1,12 @@
 # aw06
 
+1. 选用数据集为```meta_AMAZON_FASHION.json```(185M), ```meta_Books.json```(3.8G)
+2. 使用mysql数据库存储, 并且利用mybatis框架访问数据库
+3. split分割(每10000行为1个文件)成多个文件, 并且增大chunk_size.
+4. 在虚拟机分配了8个核的情况下, 设置线程数为16, 最终运行时间为**52s600ms**. 如图为工作时的截图, 可见所有的cpu核心利用率都达到了**99%以上**
+![](imgs/1.png)
+
+
 
 [Amazon Review Data (2018)](https://nijianmo.github.io/amazon/index.html) has a huge products metadata set of multiple categories.
 

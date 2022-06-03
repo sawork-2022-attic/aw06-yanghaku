@@ -18,4 +18,24 @@ public class Product {
     private List<String> category;
 
     private List<String> imageURLHighRes;
+
+	public String getMain_cat() {
+		return main_cat;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public String getAsin() {
+		return asin;
+	}
+
+	public List<String> getCategory() {
+		return category;
+	}
+
+	public List<String> getImageURLHighRes() {
+		return imageURLHighRes;
+	}
 }
